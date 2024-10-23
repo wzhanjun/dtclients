@@ -18,10 +18,9 @@ func init() {
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
 	)
 	if err != nil {
-		log.Printf("connect words client failed: %v", err)
-		return
+		log.Fatalf("connect words client failed: %v", err)
 	}
-	defer conn.Close()
+	// defer conn.Close()
 	client = NewWordsClient(conn)
 }
 
