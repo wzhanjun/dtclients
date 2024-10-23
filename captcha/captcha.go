@@ -18,7 +18,8 @@ func init() {
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
 	)
 	if err != nil {
-		log.Fatalf("connect captcha client failed: %v", err)
+		log.Printf("connect captcha client failed: %v", err)
+		return
 	}
 	defer conn.Close()
 	client = NewCaptchaClient(conn)
