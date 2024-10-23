@@ -2,8 +2,9 @@ package captcha
 
 import (
 	"context"
-	"dtclients/config"
 	"log"
+
+	"github.com/wzhanjun/dtclients/config"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

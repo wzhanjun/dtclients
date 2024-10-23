@@ -1,4 +1,4 @@
-module dtclients
+module github.com/wzhanjun/dtclients
 
 go 1.21.10
 
