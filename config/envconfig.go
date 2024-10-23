@@ -23,8 +23,8 @@ func init() {
 
 type envconfig struct {
 	Words struct {
-		AppId   string `env:"GRPC_APP_ID"`
-		Address string `env:"GRPC_ADDRESS"`
+		AppId   string `env:"GRPC_WORDS_APP_ID"`
+		Address string `env:"GRPC_WORDS_ADDRESS"`
 	}
 	Captcha struct {
 		AppId   string `env:"GRPC_CAPTCHA_APP_ID"`
