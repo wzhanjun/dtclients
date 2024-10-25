@@ -30,4 +30,9 @@ type envconfig struct {
 		AppId   string `env:"GRPC_CAPTCHA_APP_ID"`
 		Address string `env:"GRPC_CAPTCHA_ADDRESS"`
 	}
+	Slog struct {
+		AppId   string `env:"GRPC_SLOG_APP_ID"`
+		EsIndex string `env:"GRPC_SLOG_ESINDEX"`
+		Address string `env:"GRPC_SLOG_ADDRESS"`
+	}
 }
