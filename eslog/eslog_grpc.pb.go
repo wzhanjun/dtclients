@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v3.19.4
-// source: log.proto
+// source: eslog.proto
 
 package eslog
 
@@ -269,5 +269,5 @@ var Log_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "log.proto",
+	Metadata: "eslog.proto",
 }
